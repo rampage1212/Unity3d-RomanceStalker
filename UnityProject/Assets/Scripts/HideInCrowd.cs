@@ -5,18 +5,21 @@ public class HideInCrowd : MonoBehaviour
 {
 	PlayerVisibility visibility;
 
-	void OnCollisionEnter2D()
+	void OnCollisionEnter2D(Collision2D coll) 
 	{
-		visibility = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerVisibility> ();
+		if (coll.gameObject.tag == "Player")
+			visibility = coll.gameObject.GetComponent<PlayerVisibility> ();
 	}
 
-	void OnCollisionStay2D()
+	void OnCollisionStay2D(Collision2D coll)
 	{
-		visibility.visible = false;
+		if (visibility)
+			visibility.visible = false;
 	}
 
-	void OnCollisionExit2D()
+	void OnCollisionExit2D(Collision2D coll)
 	{
-		visibility.visible = true;
+		if (visibility)
+			visibility.visible = true;
 	}
 }

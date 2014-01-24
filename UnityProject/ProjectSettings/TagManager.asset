@@ -6,8 +6,12 @@ TagManager:
   - Item
   - Dangerous
   - Smelly
-  - 
+  - Target
   - Fire
+  - HideInThe
+  - HideBefore
+  - HideInto
+  - HideBetween
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
