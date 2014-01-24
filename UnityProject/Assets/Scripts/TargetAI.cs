@@ -17,7 +17,18 @@ public class TargetAI : MonoBehaviour
 	private PlayerVisibility visibility;
 	public float awarenesTimer;
 	public bool aware;
-
+	
+	public static float JARAK_KETAHUAN = 3f;
+	public static float INTERVAL_CURIGA = 2f;
+	public static float INTERVAL_KAGET = 2f;
+	
+	public float tick; //time
+	
+	public float intervalCuriga;
+	public float intervalKaget;
+	
+	stalkedState status;
+	
 	bool turnBack;
 	
 	void Awake()
@@ -25,51 +36,120 @@ public class TargetAI : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		visibility = player.GetComponent<PlayerVisibility> ();
 		character = GetComponent<PlatformerCharacter2D>();
+		
+		status = stalkedState.NORMAL;
 	}
-
+	
 	void turnBackFunc()
 	{
 		character.Move (-1f, false, false);
 		character.Move (0f, false, false);
 		turnBack = true;
 	}
-
+	
 	void FixedUpdate()
 	{
+		
+		
 		float distance = Vector3.Distance (transform.position, player.transform.position);
-
+		Debug.Log (status + "jarak:" + distance);	
+		
 		float h = 1f;
-
-		if (turnBack && !aware)
+		
+		switch (status)
 		{
-			awarenesTimer += Time.deltaTime;
-
-			if (visibility.visible && awarenesTimer > 1f)
-			{
-				Debug.Break();
-				return;
+		case stalkedState.NORMAL:
+			
+			//jarak cowok dengan cewek dekat banget
+			if (distance <= JARAK_KETAHUAN && visibility.visible) {
+				
+				//waktu kaget
+				intervalKaget = INTERVAL_KAGET;
+				
+				status = stalkedState.KAGET;
+				
+				
+			}else{
+				character.Move( h, false , false );
 			}
-			else if (awarenesTimer > 7f)
-			{
-				aware = false;
+			break;
+			
+		case stalkedState.KAGET:
+			
+			//waktu untuk kaget
+			if (intervalKaget >= 0) {
+				
+				intervalKaget -= Time.deltaTime;
+				
+				//karakter balik badan
+				//					Invoke("turnBackFunc", INTERVAL_KAGET);
+				character.Move(-1, false, false);
+				character.Move (0, false, false);
+				
+			}else{
+				
+				//nggak jadi curiga
+				if (distance > JARAK_KETAHUAN) {
+					
+					status = stalkedState.NORMAL;
+					
+				}else{
+					intervalCuriga = INTERVAL_CURIGA;
+					status = stalkedState.CURIGA;
+				}
+				
 			}
-		}
-		else if (distance < awarenesDistance)
-		{
-			h = 0f;
-			aware = true;
-
-			if (!turnBack) 
-			{
-				Invoke("turnBackFunc", 2f);
+			break;
+			
+		case stalkedState.CURIGA:
+			if (intervalCuriga >= 0) {
+				intervalCuriga -= Time.deltaTime;
+				
+				//TODO
+				//cek kalah
+				if (visibility.visible) {
+					Debug.Break();	
+				}
+				
+			}else{
+				status = stalkedState.NORMAL;
 			}
+			break;
+			
 		}
-		else
-		{
-			turnBack = false;
-		}
-
-		// Pass all parameters to the character control script.
-		if (!turnBack && !aware) character.Move( h, false , false );
+		
+		//		if (turnBack && !aware)
+		//		{
+		//			awarenesTimer += Time.deltaTime;
+		//
+		//			if (visibility.visible && awarenesTimer > 1f)
+		//			{
+		//				Debug.Break();
+		//				return;
+		//			}
+		//			else if (awarenesTimer > 7f)
+		//			{
+		//				aware = false;
+		//			}
+		//		}
+		//		else if (distance < awarenesDistance)
+		//		{
+		//			h = 0f;
+		//			aware = true;
+		//
+		//			if (!turnBack) 
+		//			{
+		//				Invoke("turnBackFunc", 2f);
+		//			}
+		//		}
+		//		else
+		//		{
+		//			turnBack = false;
+		//		}
+		//
+		//		// Pass all parameters to the character control script.
+		//		if (!turnBack && !aware) character.Move( h, false , false );
+		
+		
 	}
 }
