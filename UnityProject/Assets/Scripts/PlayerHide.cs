@@ -40,12 +40,14 @@ public class PlayerHide : MonoBehaviour
 			float yTarget = 0f; 
 			if (Input.GetKey(KeyCode.Space))
 			{
-				yTarget = 2f;
+				yTarget = 0.8f;
 				visibility.visible = false;
+				rigidbody2D.Sleep();
 			}
 			else
 			{
 				visibility.visible = true;
+				rigidbody2D.WakeUp();
 			}
 			transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, yTarget, 2 * Time.deltaTime), transform.position.z);
 		}
