@@ -19,11 +19,6 @@ public class Platformer2DUserControl : MonoBehaviour
         // Read the jump input in Update so button presses aren't missed.
         // if (CrossPlatformInput.GetButtonDown("Jump"))
         //    jump = true;
-
-		if (Input.GetKeyDown(KeyCode.LeftShift))
-			character.maxSpeed = runSpeed;
-		else
-			character.maxSpeed = runSpeed / 2f;
     }
 
 	void FixedUpdate()
@@ -31,6 +26,12 @@ public class Platformer2DUserControl : MonoBehaviour
 		// Read the inputs.
 		bool crouch = Input.GetKey(KeyCode.LeftControl);
 		float h = CrossPlatformInput.GetAxis("Horizontal");
+
+		
+		if (Input.GetKey(KeyCode.LeftShift))
+			character.maxSpeed = runSpeed;
+		else
+			character.maxSpeed = runSpeed / 2f;
 
 		// Pass all parameters to the character control script.
 		character.Move( h, crouch , jump );
