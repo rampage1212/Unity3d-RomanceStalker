@@ -28,7 +28,7 @@ public class PlayerHide : MonoBehaviour
 			float yTarget = 0f; 
 			if (Input.GetKey(KeyCode.Space))
 			{
-				yTarget = 1f;
+				yTarget = 2f;
 				visibility.visible = false;
 			}
 			else
