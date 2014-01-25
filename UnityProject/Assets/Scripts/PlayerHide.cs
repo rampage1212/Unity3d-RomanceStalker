@@ -7,6 +7,12 @@ public class PlayerHide : MonoBehaviour
 	PlatformerCharacter2D character;
 	SpriteRenderer spriteRenderer;
 	bool hidingInto;
+	
+	int SFXplayCount;
+	bool hiding;
+
+	public AudioClip hideClip;
+	public AudioClip unHideClip;
 
 	void Start()
 	{
@@ -18,13 +24,19 @@ public class PlayerHide : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		if (other.gameObject.tag == "HideInThe")
-			visibility.visible = false;
+			hide (true);
 		else if (other.gameObject.tag == "HideInto")
 		{
 			if (hidingInto && character.grounded)
+			{
 				spriteRenderer.enabled = false;
+				hide (true);
+			}
 			else
+			{
 				spriteRenderer.enabled = true;
+				hide (false);
+			}
 		}
 	}
 
@@ -33,7 +45,9 @@ public class PlayerHide : MonoBehaviour
 		if (other.gameObject.tag == "HideBefore")
 		{
 			if (Input.GetKey(KeyCode.LeftControl))
-				visibility.visible = false;
+				hide (true);
+			else
+				hide (false);
 		}
 		else if (other.gameObject.tag == "HideBetween")
 		{
@@ -41,12 +55,12 @@ public class PlayerHide : MonoBehaviour
 			if (Input.GetKey(KeyCode.Space))
 			{
 				yTarget = 0.8f;
-				visibility.visible = false;
+				hide (true);
 				rigidbody2D.Sleep();
 			}
 			else
 			{
-				visibility.visible = true;
+				hide (false);
 				rigidbody2D.WakeUp();
 			}
 			transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, yTarget, 2 * Time.deltaTime), transform.position.z);
@@ -58,9 +72,9 @@ public class PlayerHide : MonoBehaviour
 				character.Move(0f, false, true);
 				hidingInto = true;
 			}
-			else if (Input.anyKey)
+			else if (Input.anyKey && hidingInto)
 			{	
-				character.Move(0f, false, true);
+				character.Move(1f, false, true);
 				hidingInto = false;
 			}
 		}
@@ -69,8 +83,33 @@ public class PlayerHide : MonoBehaviour
 	void OnTriggerExit2D(Collider2D other) 
 	{
 		if (other.gameObject.tag == "HideInThe")
-			visibility.visible = true;
+			hide (false);
 		else if (other.gameObject.tag == "HideBefore")
-			visibility.visible = true;
+			hide (false);
+		else if (other.gameObject.tag == "HideInto")
+		{
+			hide (false);
+			spriteRenderer.enabled = true;
+		}
+	}
+
+	void hide(bool flag)
+	{
+		++SFXplayCount;
+		if (hiding != flag)
+		{
+			SFXplayCount = 0;
+			hiding = flag;
+		}
+
+		visibility.visible = !flag;
+
+		if (SFXplayCount > 0)
+			return;
+
+		if (flag)
+			AudioSource.PlayClipAtPoint(hideClip, transform.position);
+		else
+			AudioSource.PlayClipAtPoint(unHideClip, transform.position);
 	}
 }
