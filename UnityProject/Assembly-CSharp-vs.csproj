@@ -46,6 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HUDController.cs" />
+     <Compile Include="Assets\MenuController.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -69,7 +71,9 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
+     <Compile Include="Assets\Scripts\Fader.cs" />
      <Compile Include="Assets\Scripts\HideInCrowd.cs" />
      <Compile Include="Assets\Scripts\PlayerHide.cs" />
      <Compile Include="Assets\Scripts\PlayerVisibility.cs" />

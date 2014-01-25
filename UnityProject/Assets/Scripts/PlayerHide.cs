@@ -108,8 +108,8 @@ public class PlayerHide : MonoBehaviour
 			return;
 
 		if (flag)
-			AudioSource.PlayClipAtPoint(hideClip, transform.position);
+			AudioSource.PlayClipAtPoint(hideClip, transform.position, 50f);
 		else
-			AudioSource.PlayClipAtPoint(unHideClip, transform.position);
+			AudioSource.PlayClipAtPoint(unHideClip, transform.position, 50f);
 	}
 }
