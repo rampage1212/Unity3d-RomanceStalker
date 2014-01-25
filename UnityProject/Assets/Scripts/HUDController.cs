@@ -28,7 +28,13 @@ public class HUDController : MonoBehaviour {
 		if (Time.time < 20.584f)
 			audio.Stop ();
 		else
-			if (!audio.isPlaying) audio.Play ();
+		{
+			if (!audio.isPlaying) 
+			{
+				audio.Play ();
+				audio.pitch = 1f;
+			}
+		}
 
 		if (target.status == stalkedState.NORMAL)
 			audio.pitch = Mathf.Lerp(audio.pitch, 1f, Time.deltaTime);
