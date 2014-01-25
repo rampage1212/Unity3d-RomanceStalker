@@ -23,6 +23,7 @@ public class PlayerHide : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other) 
 	{
+		
 		if (other.gameObject.tag == "HideInThe")
 			hide (true);
 		else if (other.gameObject.tag == "HideInto")
