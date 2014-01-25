@@ -49,6 +49,7 @@
      <Compile Include="Assets\MenuThemeController.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Sample Assets\2D\Scripts\HideSpotRespawn.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Restarter.cs" />
@@ -72,6 +73,7 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\ExitGameController.cs" />
+     <Compile Include="Assets\Scripts\GroundFollowCamera.cs" />
      <Compile Include="Assets\Scripts\HideInCrowd.cs" />
      <Compile Include="Assets\Scripts\PlayerHide.cs" />
      <Compile Include="Assets\Scripts\PlayerVisibility.cs" />
