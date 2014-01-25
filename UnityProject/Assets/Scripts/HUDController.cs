@@ -49,7 +49,8 @@ public class HUDController : MonoBehaviour {
 		transform.GetChild (index).guiTexture.enabled = true;
 
 		// if to left behind, display the sqript message
-		transform.GetChild(2).guiText.enabled = true;
+		transform.GetChild(2).guiText.enabled = false;
+		transform.GetChild(3).guiText.enabled = true;
 
 		string gameOverText;
 		int totalScore = (int)(score * 10);
@@ -64,7 +65,7 @@ public class HUDController : MonoBehaviour {
 		else
 			gameOverText = "~ Forever Alone ~";
 
-		transform.GetChild (2).guiText.text = "your stalking score is " + totalScore + "\n" + gameOverText;
+		transform.GetChild (3).guiText.text = "your stalking score is " + totalScore + "\n" + gameOverText;
 		screenFader.FadeToBlack ();
 		isGameOver = true;
 	}
@@ -72,5 +73,10 @@ public class HUDController : MonoBehaviour {
 	public void addScore(int value)
 	{
 		score += value;
+	}
+
+	public int getScore()
+	{
+		return (int)(score * 10);
 	}
 }
