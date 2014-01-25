@@ -54,14 +54,16 @@ public class PlayerHide : MonoBehaviour
 			float yTarget = 0f; 
 			if (Input.GetKey(KeyCode.Space))
 			{
-				yTarget = 0.8f;
+				yTarget = 0.4f;
 				hide (true);
 				rigidbody2D.Sleep();
+				spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.black, 2f * Time.deltaTime);
 			}
 			else
 			{
 				hide (false);
 				rigidbody2D.WakeUp();
+				spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.white, 2f * Time.deltaTime);
 			}
 			transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, yTarget, 2 * Time.deltaTime), transform.position.z);
 		}
