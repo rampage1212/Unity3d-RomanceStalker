@@ -69,10 +69,12 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\HideInCrowd.cs" />
      <Compile Include="Assets\Scripts\PlayerHide.cs" />
      <Compile Include="Assets\Scripts\PlayerVisibility.cs" />
      <Compile Include="Assets\Scripts\TargetAI.cs" />
+     <Compile Include="Assets\Spawner.cs" />
      <None Include="Assets\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
