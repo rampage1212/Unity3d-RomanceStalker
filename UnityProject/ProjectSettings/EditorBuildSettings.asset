@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
   - enabled: 1
     path: Assets/Scenes/MainScene_Surya.unity
+  - enabled: 1
+    path: Assets/Scenes/Gender Selection.unity
