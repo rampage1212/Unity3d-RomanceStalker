@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-enum stalkedState{
+public enum stalkedState{
 	NORMAL,
 	KAGET,
 	CURIGA,
@@ -17,7 +17,9 @@ public class TargetAI : MonoBehaviour
 	private PlayerVisibility visibility;
 	public float awarenesTimer;
 	public bool aware;
-	
+	public HUDController hud;
+
+	public float JARAK_MAKSIMAL = 10f;
 	public static float JARAK_KETAHUAN = 3f;
 	public static float INTERVAL_CURIGA = 2f;
 	public static float INTERVAL_KAGET = 2f;
@@ -27,10 +29,8 @@ public class TargetAI : MonoBehaviour
 	public float intervalCuriga;
 	public float intervalKaget;
 	
-	stalkedState status;
-	
-	bool turnBack;
-	
+	public stalkedState status;
+
 	void Awake()
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
@@ -39,14 +39,7 @@ public class TargetAI : MonoBehaviour
 		
 		status = stalkedState.NORMAL;
 	}
-	
-	void turnBackFunc()
-	{
-		character.Move (-1f, false, false);
-		character.Move (0f, false, false);
-		turnBack = true;
-	}
-	
+
 	void FixedUpdate()
 	{
 		
@@ -55,7 +48,10 @@ public class TargetAI : MonoBehaviour
 //		Debug.Log (status + "jarak:" + distance);	
 		
 		float h = 1f;
-		
+
+		if (distance > JARAK_MAKSIMAL)
+			hud.GameOver(1);
+
 		switch (status)
 		{
 		case stalkedState.NORMAL:
@@ -108,7 +104,7 @@ public class TargetAI : MonoBehaviour
 				//TODO
 				//cek kalah
 				if (visibility.visible) {
-					Debug.Break();	
+					hud.GameOver(0);
 				}
 				
 			}else{
