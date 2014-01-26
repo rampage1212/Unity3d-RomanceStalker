@@ -21,6 +21,11 @@ public class PlayerHide : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 	}
 
+	void FixedUpdate()
+	{
+		if (!hiding) spriteRenderer.color = Color.white;
+	}
+
 	void OnTriggerEnter2D(Collider2D other) 
 	{
 		
