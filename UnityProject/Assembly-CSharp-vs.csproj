@@ -71,9 +71,13 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\BackToMainMenu.cs" />
      <Compile Include="Assets\Scripts\ClickToPlayScript.cs" />
      <Compile Include="Assets\Scripts\ConfirmGender.cs" />
+=======
+     <Compile Include="Assets\Scripts\BGParallax.cs" />
+>>>>>>> origin/master
      <Compile Include="Assets\Scripts\CreditsMover.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\ExitGameController.cs" />
@@ -90,6 +94,7 @@
      <Compile Include="Assets\Scripts\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\TargetAI.cs" />
+     <Compile Include="Assets\Tutorial.cs" />
      <Compile Include="Assets\UpdateScore.cs" />
      <None Include="Assets\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
   </ItemGroup>

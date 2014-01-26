@@ -4,12 +4,10 @@ using System.Collections;
 public class HideSpotRespawn : MonoBehaviour {
 
 	Camera camera;
-	Vector3 initPosition;
 
 	// Use this for initialization
 	void Start () {
 		camera = GameObject.Find ("Main Camera").camera;
-		initPosition = transform.position;
 	}
 	
 	// Update is called once per frame

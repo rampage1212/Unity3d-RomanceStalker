@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 526f3b191d567ac4c84859dcd31b01ad
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: AI_walk_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 841
+        width: 124
+        height: 410
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 841
+        width: 118
+        height: 410
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_2
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 843
+        width: 116
+        height: 408
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 843
+        width: 116
+        height: 408
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 843
+        width: 115
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 843
+        width: 115
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_6
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 843
+        width: 119
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_7
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 843
+        width: 139
+        height: 408
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 427
+        width: 159
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_9
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 427
+        width: 153
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_10
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 427
+        width: 149
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_11
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 423
+        width: 143
+        height: 412
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_12
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 423
+        width: 123
+        height: 410
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_13
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 423
+        width: 115
+        height: 410
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_14
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 425
+        width: 115
+        height: 408
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_15
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 425
+        width: 115
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_16
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 7
+        width: 116
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_17
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 7
+        width: 116
+        height: 406
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_18
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 9
+        width: 116
+        height: 404
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_19
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 9
+        width: 124
+        height: 404
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_20
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1
+        width: 149
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_21
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 3
+        width: 143
+        height: 412
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: AI_walk_22
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 5
+        width: 139
+        height: 410
+      alignment: 7
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

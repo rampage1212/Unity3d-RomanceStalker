@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: 122763266b96abf48b5baf9c03ac0c16
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_walk_hi_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 851
+        width: 198
+        height: 380
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_1
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 851
+        width: 198
+        height: 379
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_2
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 851
+        width: 198
+        height: 377
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 851
+        width: 198
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_4
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 851
+        width: 198
+        height: 374
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_5
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 851
+        width: 198
+        height: 373
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_6
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 851
+        width: 198
+        height: 373
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_7
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 851
+        width: 198
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 433
+        width: 198
+        height: 377
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 433
+        width: 198
+        height: 378
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 434
+        width: 198
+        height: 379
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 433
+        width: 198
+        height: 382
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_12
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 433
+        width: 198
+        height: 380
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_13
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 433
+        width: 198
+        height: 378
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_14
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 433
+        width: 198
+        height: 376
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_15
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 433
+        width: 198
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 198
+        height: 373
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 15
+        width: 198
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_18
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 15
+        width: 198
+        height: 375
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 15
+        width: 198
+        height: 377
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_20
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 15
+        width: 198
+        height: 379
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_21
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 15
+        width: 198
+        height: 380
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_walk_hi_22
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 15
+        width: 198
+        height: 382
+      alignment: 7
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

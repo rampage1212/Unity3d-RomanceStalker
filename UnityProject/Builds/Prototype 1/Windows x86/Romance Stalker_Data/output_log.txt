@@ -11,19 +11,13 @@ Platform assembly: D:\Projects\RomanceStalker\UnityProject\Builds\Prototype 1\Wi
 Loading D:\Projects\RomanceStalker\UnityProject\Builds\Prototype 1\Windows x86\Romance Stalker_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\Projects\RomanceStalker\UnityProject\Builds\Prototype 1\Windows x86\Romance Stalker_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\Projects\RomanceStalker\UnityProject\Builds\Prototype 1\Windows x86\Romance Stalker_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.043 seconds
+- Completed reload, in  0.189 seconds
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 63.805283 ms
+UnloadTime: 47.726734 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2587.
-Total: 1.099073 ms (FindLiveObjects: 0.100498 ms CreateObjectMapping: 0.021382 ms MarkObjects: 0.597434 ms  DeleteObjects: 0.037205 ms)
-
-UnloadTime: 2.190449 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 143 unused Assets to reduce memory usage. Loaded Objects now: 140.
-Total: 0.693656 ms (FindLiveObjects: 0.007697 ms CreateObjectMapping: 0.011119 ms MarkObjects: 0.098788 ms  DeleteObjects: 0.315181 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2557.
+Total: 9.701783 ms (FindLiveObjects: 0.274982 ms CreateObjectMapping: 0.067569 ms MarkObjects: 8.115182 ms  DeleteObjects: 0.055167 ms)
 

@@ -74,6 +74,56 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &73052036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 73052038}
+  - 132: {fileID: 73052037}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &73052037
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73052036}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: '"Press Stalk" or "Surender"'
+  m_Anchor: 1
+  m_Alignment: 2
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &73052038
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 73052036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .839999974, y: .99000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &100104934
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +205,7 @@ GameObject:
   - 131: {fileID: 272039551}
   - 114: {fileID: 272039554}
   - 82: {fileID: 272039553}
+  - 114: {fileID: 272039555}
   m_Layer: 0
   m_Name: Menu Play
   m_TagString: Untagged
@@ -262,6 +313,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89739a1f371dfd4459ef90ff5f17a5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &272039555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 272039550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28eeeeddd790a6d4aacd80263bd17e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &853393923
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,12 +366,12 @@ GUIText:
     and audiencesounds.com | Romance Stalker is made for Global Game Game Jam 2014'
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: 0, y: 0}
+  m_PixelOffset: {x: 0, y: 10}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   m_Material: {fileID: 0}
-  m_FontSize: 0
+  m_FontSize: 20
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -712,7 +774,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1807400540}
-  - 114: {fileID: 1807400539}
   - 82: {fileID: 1807400538}
   m_Layer: 0
   m_Name: Menu Theme
@@ -779,17 +840,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &1807400539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1807400537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8450c156175aaa64e80a5bd95ba5e582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1807400540
 Transform:
   m_ObjectHideFlags: 0

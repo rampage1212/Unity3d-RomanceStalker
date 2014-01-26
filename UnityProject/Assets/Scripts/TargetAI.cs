@@ -12,7 +12,7 @@ public enum stalkedState{
 public class TargetAI : MonoBehaviour 
 {
 	public float awarenesDistance = 10f;
-	private GameObject player;
+	public GameObject player;
 	private PlatformerCharacter2D character;
 	private PlayerVisibility visibility;
 	public float awarenesTimer;
@@ -31,23 +31,46 @@ public class TargetAI : MonoBehaviour
 	
 	public stalkedState status;
 
+	public MeshRenderer shoutRender;
+	public TextMesh shoutText;
+	string [] shoutString;
+	int shoutIndex;
+
 	void Awake()
 	{
-		player = GameObject.FindGameObjectWithTag ("Player");
 		visibility = player.GetComponent<PlayerVisibility> ();
 		character = GetComponent<PlatformerCharacter2D>();
 		
 		status = stalkedState.NORMAL;
 	}
 
+	void Start()
+	{
+		shoutString = new string[13];
+		shoutString [0] = "Who the hell \nis that !!";
+		shoutString [1] = "Feel like being \nfollowed.";
+		shoutString [2] = "Hey get out.";
+		shoutString [3] = "Don't joke at me.";
+		shoutString [4] = "Rrrrr.";
+		shoutString [5] = "Go to hell.";
+		shoutString [6] = "Don't follow.";
+		shoutString [7] = "Get out of my ass.";
+		shoutString [8] = "Anyone !!.";
+		shoutString [9] = "Are you Kidiing \nMe!!! FREAK!";
+		shoutString [10] = "oh come on! \nGet a Life!";
+		shoutString [11] = "you must be a \ngeek!! hah!";
+		shoutString [12] = "go away! \nasshole!!";
+
+		shoutRender.enabled = false;
+		shoutText.text = "";
+	}
+
 	void FixedUpdate()
 	{
-		
-		
 		float distance = Vector3.Distance (transform.position, player.transform.position);
 //		Debug.Log (status + "jarak:" + distance);	
 		
-		float h = 1f;
+		float h = 3f;
 
 		if (distance > JARAK_MAKSIMAL)
 			hud.GameOver(1);
@@ -63,11 +86,18 @@ public class TargetAI : MonoBehaviour
 				intervalKaget = INTERVAL_KAGET;
 				
 				status = stalkedState.KAGET;
-				
-				
+
 			}else{
 				character.Move( h, false , false );
 			}
+
+			shoutRender.enabled = false;
+			shoutText.text = "";
+
+			++shoutIndex;
+			if (shoutIndex >= shoutString.Length)
+				shoutIndex = 0;
+
 			break;
 			
 		case stalkedState.KAGET:
@@ -100,7 +130,10 @@ public class TargetAI : MonoBehaviour
 		case stalkedState.CURIGA:
 			if (intervalCuriga >= 0) {
 				intervalCuriga -= Time.deltaTime;
-				
+
+				shoutRender.enabled = true;
+				shoutText.text = shoutString[shoutIndex];
+
 				//TODO
 				//cek kalah
 				if (visibility.visible) {

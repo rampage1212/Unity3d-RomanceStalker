@@ -8,13 +8,11 @@ public class HUDController : MonoBehaviour {
 	bool isGameOver;
 	float score;
 	public AudioClip gameOverClip;
-	public AudioClip introClip;
+	public AudioClip loopClip;
 
 	void Start()
 	{
 		guiTexture.pixelInset = new Rect (0, 0, Screen.width, Screen.height);
-		AudioSource.PlayClipAtPoint (introClip, transform.position);
-
 		screenFader.FadeToClear ();
 	}
 
@@ -25,15 +23,11 @@ public class HUDController : MonoBehaviour {
 		if (screenFader.fading)
 			guiTexture.enabled = true;
 
-		if (Time.time < 20.584f)
-			audio.Stop ();
-		else
+		if (audio.clip != loopClip && !audio.isPlaying)
 		{
-			if (!audio.isPlaying) 
-			{
-				audio.Play ();
-				audio.pitch = 1f;
-			}
+			audio.clip = loopClip;
+			audio.loop = true;
+			audio.Play();
 		}
 
 		if (target.status == stalkedState.NORMAL)
