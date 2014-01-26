@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BackToMainMenu.cs" />
      <Compile Include="Assets\NewGameController.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Sample Assets\2D\Scripts\CameraFollow.cs" />
@@ -72,10 +71,14 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\BackToMainMenu.cs" />
+     <Compile Include="Assets\Scripts\ClickToPlayScript.cs" />
+     <Compile Include="Assets\Scripts\ConfirmGender.cs" />
      <Compile Include="Assets\Scripts\CreditsMover.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\ExitGameController.cs" />
      <Compile Include="Assets\Scripts\Fader.cs" />
+     <Compile Include="Assets\Scripts\GenderProfile.cs" />
      <Compile Include="Assets\Scripts\GroundFollowCamera.cs" />
      <Compile Include="Assets\Scripts\HUDController.cs" />
      <Compile Include="Assets\Scripts\HideInCrowd.cs" />
