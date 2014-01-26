@@ -36,6 +36,12 @@ public class Tutorial : MonoBehaviour {
 		Time.timeScale = 0;
 	}
 
+	void Update()
+	{
+		if (Input.anyKeyDown)
+			OnMouseDown();
+	}
+
 	void OnMouseDown()
 	{
 		if (index + 1 == text.Length)

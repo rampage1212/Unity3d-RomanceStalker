@@ -5272,7 +5272,7 @@ MonoBehaviour:
   screenFader: {fileID: 1954017177}
   target: {fileID: 1823400774}
   gameOverClip: {fileID: 8300000, guid: 7132b315b445cc946b62fbcc5c806aae, type: 3}
-  introClip: {fileID: 8300000, guid: d26be85304b5d4b44b829c5223248b76, type: 3}
+  loopClip: {fileID: 8300000, guid: 6cace456dae180c4480bd8429b5bfd26, type: 3}
 --- !u!131 &1954017176
 GUITexture:
   m_ObjectHideFlags: 0
@@ -5313,11 +5313,11 @@ AudioSource:
   m_GameObject: {fileID: 1954017173}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6cace456dae180c4480bd8429b5bfd26, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d26be85304b5d4b44b829c5223248b76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .699999988
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
