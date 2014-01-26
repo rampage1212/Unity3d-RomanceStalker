@@ -38,7 +38,7 @@ public class Tutorial : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		if (index == text.Length)
+		if (index + 1 == text.Length)
 		{
 			Time.timeScale = 1;
 			Destroy(transform.parent.gameObject);
