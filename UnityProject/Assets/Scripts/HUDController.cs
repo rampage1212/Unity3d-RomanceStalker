@@ -44,6 +44,9 @@ public class HUDController : MonoBehaviour {
 		if (isGameOver && !screenFader.fading)
 			if (Input.anyKeyDown)
 				Application.LoadLevel(0);
+
+		if (Input.GetKeyDown(KeyCode.Escape))
+			Time.timeScale = 0;
 	}
 
 	public void GameOver(int index)

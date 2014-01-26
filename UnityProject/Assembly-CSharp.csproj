@@ -84,6 +84,7 @@
      <Compile Include="Assets\Scripts\ScreenFader.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\TargetAI.cs" />
+     <Compile Include="Assets\Tutorial.cs" />
      <Compile Include="Assets\UpdateScore.cs" />
      <None Include="Assets\Sample Assets\Cross Platform Input\Cross Platform Input Guidelines.txt" />
   </ItemGroup>
