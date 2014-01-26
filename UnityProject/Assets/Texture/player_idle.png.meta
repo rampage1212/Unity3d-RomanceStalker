@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 242fdc17fcf4af94f86b5ae57770815e
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_idle_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1256
+        width: 192
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1256
+        width: 192
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_2
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1256
+        width: 191
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_3
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1256
+        width: 193
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1256
+        width: 191
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 838
+        width: 192
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_6
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 838
+        width: 193
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 838
+        width: 193
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_8
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 838
+        width: 191
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 838
+        width: 192
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_10
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 420
+        width: 192
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_11
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 420
+        width: 191
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_12
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 420
+        width: 193
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_13
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 420
+        width: 191
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 420
+        width: 193
+        height: 415
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 192
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_16
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 2
+        width: 192
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_17
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 2
+        width: 191
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_18
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 2
+        width: 193
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_idle_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2
+        width: 191
+        height: 414
+      alignment: 7
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

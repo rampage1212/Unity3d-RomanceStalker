@@ -1,0 +1,252 @@
+fileFormatVersion: 2
+guid: f694c916e56f1ff4daf9d8e825bf779a
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: player_crouch_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 812
+        width: 196
+        height: 284
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 813
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_2
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_3
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_6
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_7
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 814
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_8
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 409
+        width: 196
+        height: 281
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_9
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 409
+        width: 196
+        height: 281
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_10
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 407
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_11
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 407
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_12
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 407
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 407
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_14
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 407
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_15
+      rect:
+        serializedVersion: 2
+        x: 1782
+        y: 408
+        width: 196
+        height: 282
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_16
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_17
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_18
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_19
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_20
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: player_crouch_22
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 3
+        width: 196
+        height: 283
+      alignment: 7
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

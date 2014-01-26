@@ -10,6 +10,7 @@ public class PlayerHide : MonoBehaviour
 	
 	int SFXplayCount;
 	bool hiding;
+	Animator anim;
 
 	public AudioClip hideClip;
 	public AudioClip unHideClip;
@@ -19,6 +20,7 @@ public class PlayerHide : MonoBehaviour
 		visibility = GetComponent<PlayerVisibility> ();
 		character = GetComponent<PlatformerCharacter2D>();
 		spriteRenderer = GetComponent<SpriteRenderer> ();
+		anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate()
@@ -48,6 +50,7 @@ public class PlayerHide : MonoBehaviour
 
 	void OnTriggerStay2D(Collider2D other)
 	{
+		anim.SetBool("Hiding", false);
 		if (other.gameObject.tag == "HideBefore")
 		{
 			if (Input.GetKey(KeyCode.LeftControl))
@@ -63,15 +66,17 @@ public class PlayerHide : MonoBehaviour
 				yTarget = 0.4f;
 				hide (true);
 				rigidbody2D.Sleep();
-				spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.black, 2f * Time.deltaTime);
+			//	spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.black, 2f * Time.deltaTime);
+				anim.SetBool("Hiding", true);
 			}
 			else
 			{
 				hide (false);
 				rigidbody2D.WakeUp();
-				spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.white, 2f * Time.deltaTime);
+			//	spriteRenderer.color = Color.Lerp(spriteRenderer.color, Color.white, 2f * Time.deltaTime);
+				anim.SetBool("Hiding", false);
 			}
-			transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, yTarget, 2 * Time.deltaTime), transform.position.z);
+			//transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, yTarget, 2 * Time.deltaTime), transform.position.z);
 		}
 		else if (other.gameObject.tag == "HideInto")
 		{

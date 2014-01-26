@@ -12,7 +12,7 @@ public enum stalkedState{
 public class TargetAI : MonoBehaviour 
 {
 	public float awarenesDistance = 10f;
-	private GameObject player;
+	public GameObject player;
 	private PlatformerCharacter2D character;
 	private PlayerVisibility visibility;
 	public float awarenesTimer;
@@ -38,7 +38,6 @@ public class TargetAI : MonoBehaviour
 
 	void Awake()
 	{
-		player = GameObject.FindGameObjectWithTag ("Player");
 		visibility = player.GetComponent<PlayerVisibility> ();
 		character = GetComponent<PlatformerCharacter2D>();
 		
