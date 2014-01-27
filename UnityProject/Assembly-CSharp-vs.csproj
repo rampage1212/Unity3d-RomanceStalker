@@ -71,13 +71,10 @@
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadRelativePositional.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\TouchPadSwipe.cs" />
      <Compile Include="Assets\Sample Assets\Cross Platform Input\Scripts\VirtualInput.cs" />
-<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\BGParallax.cs" />
      <Compile Include="Assets\Scripts\BackToMainMenu.cs" />
      <Compile Include="Assets\Scripts\ClickToPlayScript.cs" />
      <Compile Include="Assets\Scripts\ConfirmGender.cs" />
-=======
-     <Compile Include="Assets\Scripts\BGParallax.cs" />
->>>>>>> origin/master
      <Compile Include="Assets\Scripts\CreditsMover.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\ExitGameController.cs" />

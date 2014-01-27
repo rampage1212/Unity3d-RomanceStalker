@@ -775,6 +775,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1807400540}
   - 82: {fileID: 1807400538}
+  - 114: {fileID: 1807400539}
   m_Layer: 0
   m_Name: Menu Theme
   m_TagString: Untagged
@@ -840,6 +841,17 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &1807400539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807400537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8450c156175aaa64e80a5bd95ba5e582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1807400540
 Transform:
   m_ObjectHideFlags: 0

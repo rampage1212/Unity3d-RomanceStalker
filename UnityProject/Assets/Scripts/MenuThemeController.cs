@@ -4,7 +4,7 @@ using System.Collections;
 public class MenuThemeController : MonoBehaviour {
 
 	void FixedUpdate () {
-		if (Application.loadedLevel == 1) {
+		if (Application.loadedLevel == 2) {
 			Destroy (gameObject);
 		}
 	}

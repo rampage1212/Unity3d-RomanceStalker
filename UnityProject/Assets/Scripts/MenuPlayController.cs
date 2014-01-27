@@ -5,6 +5,6 @@ public class MenuPlayController : MonoBehaviour {
 
 	void OnMouseDown () {
 		audio.Play ();
-		Application.LoadLevel(2);
+		Application.LoadLevel(1);
 	}
 }

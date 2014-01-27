@@ -11,6 +11,6 @@ public class ClickToPlayScript : MonoBehaviour {
 	// Update is called once per frame
 	void OnMouseDown () {
 		audio.Play ();
-		Application.LoadLevel(1);
+		Application.LoadLevel(2);
 	}
 }

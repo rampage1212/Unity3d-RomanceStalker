@@ -8,11 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/MainScene_Surya.unity
-<<<<<<< HEAD
-  - enabled: 1
     path: Assets/Scenes/Gender Selection.unity
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-=======
->>>>>>> origin/master
+    path: Assets/Scenes/MainScene_Surya.unity
